@@ -19,10 +19,38 @@
       display:block;
     }
 
+    /* Hover Box Effect with Red Glow */
+    .hover-box {
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
     .hover-box:hover {
       transform: translateY(-2px) scale(1.01);
-      box-shadow: 0 5px 15px rgba(255,255,255,0.05);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 15px 30px rgba(255,0,0,0.35);
+      border-color: rgba(255,0,0,0.5);
+    }
+
+    /* Nav hover effect with red streak */
+    header nav a {
+      position: relative;
+      color: #cfcfcf;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    header nav a::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background: red;
+      transition: width 0.3s ease;
+    }
+    header nav a:hover::after {
+      width: 100%;
+      left: 0;
+      right: auto;
     }
   </style>
 </head>
@@ -35,9 +63,9 @@
     <nav class="flex justify-between items-center text-sm text-gray-400">
       <span class="font-semibold text-2xl text-gray-200">Smaran Mukkavilli</span>
       <div class="flex space-x-6">
-        <a href="#awards" class="hover:text-gray-200 transition-colors duration-300">Awards</a>
-        <a href="#projects" class="hover:text-gray-200 transition-colors duration-300">Projects</a>
-        <a href="#publications" class="hover:text-gray-200 transition-colors duration-300">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
       </div>
     </nav>
   </header>
@@ -54,19 +82,19 @@
   <section id="awards" class="max-w-4xl mx-auto px-6 mt-28 relative z-10 scroll-mt-32">
     <h2 class="text-sm uppercase tracking-widest text-gray-500">Awards</h2>
     <div class="mt-10 grid gap-6">
-      <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover-box">
+      <div class="bg-white/5 rounded-xl p-6 hover-box">
         <p class="text-lg text-gray-100">Second Place Overall — National TSA TEAMS Conference (2025)</p>
         <p class="text-gray-400 mt-1">Second place in the presentation category, third place in mathematical modeling, fourth place in MCQ, and 10th place in Build</p>
       </div>
-      <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover-box">
+      <div class="bg-white/5 rounded-xl p-6 hover-box">
         <p class="text-lg text-gray-100">CyberPatriot Gold Tier — First Place (California)</p>
         <p class="text-gray-400 mt-1">Team 18-1574</p>
       </div>
-      <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover-box">
+      <div class="bg-white/5 rounded-xl p-6 hover-box">
         <p class="text-lg text-gray-100">Second Place — UCLA Codesprint (2025)</p>
         <p class="text-gray-400 mt-1">Annual online UCLA coding competition - competed as a part of CCA Treachery.</p>
       </div>
-      <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover-box">
+      <div class="bg-white/5 rounded-xl p-6 hover-box">
         <p class="text-lg text-gray-100">First Place in the San Diego High School County Championship 2026</p>
         <p class="text-gray-400 mt-1">Part of TEAM Cayon Crest Academy</p>
       </div>
@@ -77,15 +105,15 @@
   <section id="projects" class="max-w-4xl mx-auto px-6 mt-28 relative z-10 scroll-mt-32">
     <h2 class="text-sm uppercase tracking-widest text-gray-500">Projects</h2>
     <div class="mt-10 grid gap-6">
-      <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover-box">
+      <div class="bg-white/5 rounded-xl p-6 hover-box">
         <h3 class="text-xl font-medium text-gray-100">Competitive Programming Toolkit</h3>
         <p class="mt-2 text-gray-400 max-w-2xl">A personal library of algorithms and data structures used in contests and training.</p>
       </div>
-      <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover-box">
+      <div class="bg-white/5 rounded-xl p-6 hover-box">
         <h3 class="text-xl font-medium text-gray-100">Math Contest Archive</h3>
         <p class="mt-2 text-gray-400 max-w-2xl">A curated collection of solutions and write-ups from AMC, AIME, and Olympiad-style problems.</p>
       </div>
-      <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover-box">
+      <div class="bg-white/5 rounded-xl p-6 hover-box">
         <h3 class="text-xl font-medium text-gray-100">CyberPatriot Hardening Scripts</h3>
         <p class="mt-2 text-gray-400 max-w-2xl">Automation tools for securing Windows and Linux systems in competition environments.</p>
       </div>
@@ -96,10 +124,10 @@
   <section id="publications" class="max-w-4xl mx-auto px-6 mt-28 relative z-10 scroll-mt-32">
     <h2 class="text-sm uppercase tracking-widest text-gray-500">Publications</h2>
     <div class="mt-8 grid gap-4">
-      <div class="bg-white/5 border border-white/10 rounded-xl p-5 text-gray-400 hover-box">
+      <div class="bg-white/5 rounded-xl p-5 text-gray-400 hover-box">
         <span class="text-gray-200">Deep Learning for Robotics</span>, Journal of AI Research (2025)
       </div>
-      <div class="bg-white/5 border border-white/10 rounded-xl p-5 text-gray-400 hover-box">
+      <div class="bg-white/5 rounded-xl p-5 text-gray-400 hover-box">
         <span class="text-gray-200">Graph Algorithms in Competitive Programming</span>, CS Conference (2024)
       </div>
     </div>
@@ -114,26 +142,20 @@
     const canvas = document.getElementById('shader-bg');
     const ctx = canvas.getContext('2d');
 
-    function resize() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
+    function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
     window.addEventListener('resize', resize);
     resize();
 
     let t = 0;
     function draw() {
-      const w = canvas.width;
-      const h = canvas.height;
+      const w = canvas.width, h = canvas.height;
       ctx.clearRect(0,0,w,h);
-
       const colors = ['rgba(255,100,0,0.15)','rgba(0,200,255,0.15)','rgba(200,0,255,0.1)'];
       const positions = [
         {x:0.2*w+50*Math.sin(t*0.5),y:0.3*h+50*Math.cos(t*0.5)},
         {x:0.7*w+70*Math.sin(t*0.3),y:0.7*h+70*Math.cos(t*0.3)},
         {x:0.5*w+60*Math.sin(t*0.4),y:0.5*h+60*Math.cos(t*0.4)}
       ];
-
       for(let i=0;i<3;i++){
         const p=positions[i];
         const gradient = ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,150);
@@ -142,7 +164,6 @@
         ctx.fillStyle = gradient;
         ctx.fillRect(0,0,w,h);
       }
-
       t += 0.5;
       requestAnimationFrame(draw);
     }
