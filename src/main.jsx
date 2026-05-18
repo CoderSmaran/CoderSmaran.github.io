@@ -181,7 +181,7 @@ function HomePage({ navigate }) {
 
       <section className="intro">
         <p>
-          I&apos;m a college student who likes building project-driven software, engineering systems,
+          I&apos;m a high school student who likes building project-driven software, engineering systems,
           and technical tools that turn rough ideas into working demos.
         </p>
         <p>
