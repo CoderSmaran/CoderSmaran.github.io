@@ -1,0 +1,21 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" fill="#0b1018"/>
+  <rect x="112" y="94" width="976" height="572" rx="24" fill="#121a27" stroke="#2b3a4e" stroke-width="4"/>
+  <rect x="178" y="166" width="360" height="358" rx="18" fill="#1d2838" stroke="#40536e" stroke-width="6"/>
+  <path d="M234 524V282L358 206L482 282V524" stroke="#7bdff2" stroke-width="16" stroke-linejoin="round"/>
+  <rect x="284" y="360" width="148" height="164" rx="10" fill="#26364c"/>
+  <circle cx="358" cy="330" r="42" fill="#58d6a3"/>
+  <path d="M358 288V372M316 330H400" stroke="#0b1018" stroke-width="12" stroke-linecap="round"/>
+  <rect x="622" y="168" width="360" height="88" rx="14" fill="#202b3b"/>
+  <rect x="660" y="204" width="206" height="18" rx="9" fill="#f5f7fb"/>
+  <rect x="622" y="302" width="360" height="88" rx="14" fill="#202b3b"/>
+  <rect x="660" y="338" width="250" height="18" rx="9" fill="#b47bff"/>
+  <rect x="622" y="436" width="360" height="88" rx="14" fill="#202b3b"/>
+  <rect x="660" y="472" width="176" height="18" rx="9" fill="#ffcf5a"/>
+  <path d="M538 344C596 318 626 272 682 276" stroke="#58d6a3" stroke-width="10" stroke-linecap="round"/>
+  <path d="M538 414C608 420 640 464 704 464" stroke="#b47bff" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="956" cy="588" r="54" fill="#ffcf5a"/>
+  <path d="M930 588H982M956 562V614" stroke="#0b1018" stroke-width="10" stroke-linecap="round"/>
+  <text x="178" y="602" fill="#f5f7fb" font-family="Arial, sans-serif" font-size="54" font-weight="800">RoomIQ</text>
+  <text x="178" y="646" fill="#9da8ba" font-family="Arial, sans-serif" font-size="24" font-weight="700">smart room intelligence science fair project</text>
+</svg>
