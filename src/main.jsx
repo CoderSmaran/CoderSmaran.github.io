@@ -42,7 +42,7 @@ const projects = [
     year: '2025',
     image: '/assets/ravenmun.png',
     summary:
-      'A conference website coded from scratch for CCA Model UN, supporting committees, schedules, officers, and registration.',
+      'A conference website coded from scratch for the CCA Model UN annual Raven MUN conference, supporting committees, schedules, officers, and registration.',
     stack: ['Frontend', 'Responsive design', 'Content architecture'],
     metrics: ['Coded from scratch', 'Director of Technology', 'Conference site'],
     overview:
