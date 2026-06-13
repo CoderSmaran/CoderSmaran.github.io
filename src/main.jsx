@@ -181,9 +181,13 @@ function HomePage({ navigate }) {
 
       <section className="intro">
         <p>
-          I&apos;m a high school student interested in computer science, engineering, and mathematics. 
+          I&apos;m a high school student who likes building project-driven software, engineering systems,
+          and technical tools that turn rough ideas into working demos.
         </p>
-
+        <p>
+          These are the three projects I&apos;m currently highlighting: RoomIQ, the CCA RavenMUN
+          website, and PhysicsSIM. Each card opens a dedicated writeup page.
+        </p>
       </section>
 
       <section className="projects-section" id="projects">
@@ -356,4 +360,8 @@ function ProjectPage({ project, navigate }) {
   );
 }
 
+<<<<<<< HEAD
 createRoot(document.getElementById('root')).render(<App />);
+=======
+createRoot(document.getElementById('root')).render(<App />);
+>>>>>>> origin/main
