@@ -360,8 +360,4 @@ function ProjectPage({ project, navigate }) {
   );
 }
 
-<<<<<<< HEAD
 createRoot(document.getElementById('root')).render(<App />);
-=======
-createRoot(document.getElementById('root')).render(<App />);
->>>>>>> origin/main
